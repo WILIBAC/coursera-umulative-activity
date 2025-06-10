@@ -4,11 +4,6 @@ import random
 def roll_die(sides=6):
     return random.randint(1, sides)
 
-<<<<<<< HEAD
-print("Dice simulator")
-sides = int(input("Enter the number of sides on the die: "))
-print(f"Rolled: {roll_die(sides)}")
-=======
 def roll_multiple_dice(num_dice, sides=6):
     return [roll_die(sides) for _ in range(num_dice)]
 
@@ -17,4 +12,3 @@ sides = int(input("Enter the number of sides on the die: "))
 num_dice = int(input("Enter the number of dice to roll: "))
 results = roll_multiple_dice(num_dice, sides)
 print(f"Rolled: {results}")
->>>>>>> 02f226f (feat: multiple dice rolls implemented)
